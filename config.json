@@ -9,17 +9,17 @@
     "min_n": 100,
     "fallback_bin": "60-79",
     "precalib_universe": "SP100",
-    "rebuild_days": 999
+    "rebuild_days": 7
   },
 
-  "wf": { "train_months": 18, "test_months": 6 },
+    "wf": { "train_months": 18, "test_months": 6, "top_k": 5, "rebalance": "M", "cost_bps": 5, "slip_bps": 5 },
 
   "regime": { "vix_elevated": 20.0, "vix_high": 25.0 },
 
   "volume": { "min_base": 1.1, "max_base": 1.5 },
 
   "news": {
-    "sentiment_cap_points": 7,
+    "sentiment_cap_points": 5, "intraday_weight": 0.25,
     "opinion_stoplist": [
       "opinion", "rumor", "speculative", "blog",
       "downgrade", "upgrade", "price target", "short seller"
